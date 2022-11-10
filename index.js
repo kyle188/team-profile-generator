@@ -1,10 +1,9 @@
 import inquirer from 'inquirer'
 import fs from 'fs'
-import generateHTML from './generateHTML.js'
+import generateHTML from './src/generateHTML.js'
 import Manager from './lib/Manager.js'
 import Engineer from './lib/Engineer.js'
 import Intern from './lib/Intern.js'
-import path from 'path'
 const rosterArray = []
 
 
@@ -68,16 +67,6 @@ const addMember = () => {
           createRoster()
       }
     })
-  // .then(listChoice => {
-  //     if (listChoice.role === "add engineer") {
-  //       addEngineer()
-  //     }
-  //     if (listChoice.role === "add intern") {
-  //       addIntern()
-  //     } else {
-  //       createRoster()
-  //     }
-  // })
 }
 
 const addEngineer = () => {
